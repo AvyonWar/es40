@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * l'es. chiede di stampare solo un mese,
  * Ma se io volessi usare un IF/ELSE per stampare tuuti i mesi con vicino l'apposita scritta,
@@ -9,10 +11,16 @@
  * come faccio?
  */
 public class Month {
-    public enum ListMonth {January, February, March, April, May, June, July, August, September, October, November, December}
+   // public enum ListMonth {January, February, March, April, May, June, July, August, September, October, November, December}
 
     public static void main(String[] args) {
-        ListMonth listMonth = ListMonth.April;
+        String[] listMonth = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+        System.out.println(listMonth[0] + " - " + listMonth[1] + " - " + listMonth[4] + " - " + listMonth[6] +  " - ends with y");
+        System.out.println(listMonth[2] + " - " + listMonth[3] + " - " + listMonth[5] + " - " + listMonth[7] + " - " + listMonth[8] + " - " + listMonth[8] + " - " + listMonth[10] + " - " + listMonth[11] + " - doesn't end with y");
+
+
+
+       /* ListMonth listMonth = ListMonth.April;
 
         switch (listMonth){
             case January:
@@ -51,6 +59,6 @@ public class Month {
             case  December:
                 System.out.println(listMonth + " doesn't end with y");
                 break;
-        }
+        }*/
     }
 }
