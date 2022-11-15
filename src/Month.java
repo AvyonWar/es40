@@ -8,11 +8,10 @@ public class Month {
     public static void main(String[] args) {
 
         for (ListMonth month : ListMonth.values()) {
-            System.err.println(month);
             if (month.toString().endsWith("y") || month.toString().endsWith("Y")) {
-                System.out.println(month + "ends with y");
+                System.out.println(month + ": ends with y");
             } else {
-                System.out.println(month + "does not end with y");
+                System.out.println(month + ": does not end with y");
             }
         }
     }
